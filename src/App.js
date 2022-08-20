@@ -1,18 +1,13 @@
-import React, {Component} from 'react'
-import HomePage from "./pages/HomePage"
+import React from 'react'
+import TodosPage from "./pages/TodosPage"
 import "./App.css"
 
-class App extends Component{
-
-  render(){
+const App = ()=> {
     return <div>
       <div className="todos-container">
-        <HomePage/>
+        <TodosPage/>
       </div>
     </div>
-    
-  }
-
 }
 
 

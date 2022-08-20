@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
 
-export default class Todo extends Component {
-    render() {
+const Todo =(props)=>{
+ 
         return (
-           <div key={"todo-"+this.props.key} className="item">
-                    <div><input onChange={()=>this.props.markAsCompleted(this.props.id)} checked={this.props.completed} type="checkbox" /> {this.props.name}</div>
+           <div key={"todo-"+props.key} className="item">
+                    <div><input onChange={()=>props.markAsCompleted(props.id)} checked={props.completed} type="checkbox" /> {props.name}</div>
                     <div className="manage">
-                        <button onClick={()=>{this.props.setSelectedTodo(this)}}>
+                        <button onClick={()=>{props.setSelectedTodo(this)}}>
                         <img src="images/edit.png" width="20px" alt="edit1" />
                         </button>
-                        <button onClick={()=>{this.props.deleteTodo(this.props.id)}}>
+                        <button onClick={()=>{props.deleteTodo(props.id)}}>
                         <img src="images/delete.png" width="15px" alt="del1" />
                         </button>
                     </div>
           </div>
         )
-    }
+    
 }
+
+export default Todo

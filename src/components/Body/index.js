@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Todo from "../Todo"
 import TodoForm from "../TodoForm"
 
-
 const Body = (props)=>{
 
     const [selectedTodo, setSelectedTodo] = useState(null)
