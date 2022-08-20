@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.itemsList {
+  display: flex;
+  gap: 10px;
+}
